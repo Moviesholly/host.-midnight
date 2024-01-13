@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOTOMOVIES.ONLINE</title>
+</head>
+<style>
+    html,
+body,
+#container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    color: #fff;
+    overflow: hidden;
+}
+#myElement {
+    height: 100vh !important;
+}
+body {
+    height: 100vh;
+}
+#container {
+    position: absolute;
+    text-align: center
+}
+
+video {
+    outline: 0
+}
+</style>
+<body>
+    <div class='video'>
+        <script src="https://use.fontawesome.com/20603b964f.js"></script>
+        <script type="text/javascript" src="https://content.jwplatform.com/libraries/LJ361JYj.js"></script>
+        <script type="text/javascript">
+          jwplayer.key = 'ypdL3Acgwp4Uh2/LDE9dYh3W/EPwDMuA2yid4ytssfI=';
+          // jwplayer.key = 'ITWMv7t88JGzI0xPwW8I0+LveiXX9SWbfdmt0ArUSyc=';
+        </script>
+        <div id="myElement"></div>
+        <script type="text/javascript">
+          jwplayer("myElement").setup({
+            image: "https://images.pexels.com/photos/19844039/pexels-photo-19844039/free-photo-of-gotomovies-online.png?auto=compress&cs=tinysrgb&w=600&lazy=load",
+            //aspectratio: "16:9",
+            // width: '100%',
+            height: window.innerHeight,
+            autostart: false,
+            file : 'https://raw.githubusercontent.com/Moviesholly/Nightmare/master/Nightmare.on.34th.Street.2023.m3u8',
+            title: 'Rebel Moon',
+            description: 'Free Movies',
+            aboutlink: 'https://www.jwplayer.com/',
+            tracks:[{"file":"<?php echo $cc; ?>","label":"Indonesia","kind":"captions","default":"true"}],
+            captions: {color: '#ffb800',fontSize: 30,backgroundOpacity: 0},
+            sharing: {
+              sites: ['facebook','twitter','tumblr','googleplus',{icon: '//support-static.jwplayer.com/images/awesome.svg', src: 'http://www.jwplayer.com/?', label:'jwplayer'}],
+              code: encodeURI("<iframe src='<?php echo $sharing;?>' width='480' height='320'></iframe>"),
+              link: "<?php echo $sharing;?>"
+            }
+          })
+        </script>
+                <script>
+                  setInterval(() => {
+                      const item = document.querySelector('.jw-button-container .jw-icon.jw-icon-inline.jw-button-color.jw-reset.jw-logo-button');
+                      if (item) {
+                          item.innerHTML = `
+                          
+      
+                          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="194" height="31" xml:space="preserve" version="1.1" viewBox="0 0 194 31">
+          <image width="194" height="31" xlink:href="https://images.pexels.com/photos/19844020/pexels-photo-19844020/free-photo-of-www-gotomovies-online.png?auto=compress&cs=tinysrgb&w=600&lazy=load"/>
+        </svg>
+      `;
+                      }
+      
+                  }, 1000);
+      
+                  console.log(`
+      ==================================================
+      - Copyright by WWW.ONEKH.ME
+      - Owner by: Tith MOUE
+      - សូមទាក់ទងមកកាន់យើងខ្ញុំបើសិនជាអ្នកចង់យកវីដេអូទៅផុសបន្ត បើសិនយើងឃើញលោកអ្នកយកទៅប្រើប្រាស់ដោយគ្មានការអនុញ្ញាតិយើងនឹងចាត់វិធានការលើគេហទំព័រនោះ។
+      ==================================================
+                  `)
+              </script>
+      </div>
+</body>
+</html>
